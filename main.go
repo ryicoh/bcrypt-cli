@@ -15,8 +15,8 @@ var (
 )
 
 func init() {
-	defaultCost := 10
-	costHelp := "Hashing cost. Default is 10"
+	cost = 14
+	costHelp := fmt.Sprintf("Hashing cost. Default is %d", cost)
 	flag.IntVar(&cost, "c", defaultCost, costHelp)
 	flag.IntVar(&cost, "cost", defaultCost, costHelp)
 	flag.BoolVar(&noNewline, "n", false, "Do not print the trailing newline character.")
